@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  color: #333;
+  text-align: center;
+  width: 200px;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px;
+  cursor: default;
+  margin-bottom: 20px;
+}
+.calcuator {
+  background: rgba(80, 79, 79, 0.644);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.175);
+  backdrop-filter: blur(10px);
+    padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: solid 1px whitesmoke;
+
+}
+#result {
+  font-family: "Mozilla Text", sans-serif;
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  height: 70px;
+  border: none;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 5px;
+  outline: none;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+  gap: 10px;
+  margin-top: 20px;
+}
+button {
+  font-size: 24px;
+  border: none;
+  box-shadow: 0 -3px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  background-color: azure;
+  transition: box-shadow 1.8 ease-in-out, opacity 1.8 ease-in-out;
+}
+.clear {
+  background-color: red;
+  color: white;
+}
+.number,
+.decimal {
+  background-color: aliceblue;
+  color: black;
+}
+.operator {
+  background-color: rgb(16, 128, 226);
+  color: white;
+  font-weight: 700;
+}
+.equal {
+  background-color: rgb(28, 216, 122);
+  color: white;
+  grid-row: span 4;
+}
+.buttons button:last-child{
+font-weight: 700;
+}
+button:active {
+  box-shadow: 0 0 0 rgba(219, 39, 210, 0.904);
+  opacity: 0.8;
+}
